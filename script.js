@@ -106,6 +106,13 @@ makeBarCanvas(
 	["orange", "red", "gold"]
 );
 
+makeBarCanvas(
+	document.getElementById("stats_iron"),
+	["Very young children", "Pregnant Women"],
+	[21, 30],
+	["orange", "gold"]
+);
+
 new ScrollMagic.Scene({
 	triggerElement: "#stats",
 	triggerHook: 0.7,
