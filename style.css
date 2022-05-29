@@ -61,13 +61,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
     margin: 20px;
 }
 
 .stat h1 {
     font-size: 36px;
-    max-width: min(100vw, 650px);
+    max-width: 790px;
 }
 
 #stats {
@@ -84,4 +83,11 @@ body {
     font-size: 60px;
     display: block;
     margin: 100px 0px;
+}
+@media (max-width: 900px) {
+    .stat {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 }
