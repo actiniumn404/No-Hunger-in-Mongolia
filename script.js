@@ -42,6 +42,35 @@ const makeCanvas = (container, label, dataset, colorset) => {
 	return res;
 };
 
+const makeBarCanvas = (container, thelabels, dataset, colorset) => {
+	cont = container.getContext("2d");
+	res = new Chart(cont, {
+		type: "bar",
+		data: {
+			labels: thelabels,
+			datasets: [
+				{
+					label: "Lack of Vitamin D",
+					data: dataset,
+					backgroundColor: colorset,
+				},
+			],
+		},
+		options: {
+			scales: {
+				yAxes: [
+					{
+						ticks: {
+							beginAtZero: true,
+						},
+					},
+				],
+			},
+		},
+	});
+	return res;
+};
+
 makeCanvas(
 	document.getElementById("stats__malnourishment"),
 	["Malnourished people in Mongolia", "Nourished people in Mongolia"],
@@ -56,7 +85,25 @@ makeCanvas(
 		"People without proper access to food in Ulaanbaatar",
 	],
 	[68, 32],
-	["yellow", "lightgreen"]
+	["gold", "lightgreen"]
+);
+
+makeCanvas(
+	document.getElementById("stats_fiveyr_olds"),
+	[
+		"Healthy Mongolian 0-5 year olds",
+		"Anemic Mongolian 0-5 year olds",
+		"Undernourished Mongolian 0-5 year olds",
+	],
+	[13, 20, 80],
+	["red", "orange", "lightgreen"]
+);
+
+makeBarCanvas(
+	document.getElementById("stats_vitad"),
+	["Children Under 5", "Pregnant Women", "Men"],
+	[90, 95, 85],
+	["orange", "red", "gold"]
 );
 
 new ScrollMagic.Scene({
@@ -70,7 +117,7 @@ new ScrollMagic.Scene({
 for (let i = 1; i < document.querySelectorAll("#stats > *").length; i++) {
 	new ScrollMagic.Scene({
 		triggerElement: document.querySelectorAll("#stats > *")[i - 1],
-		triggerHook: "onEnd",
+		triggerHook: "onCenter",
 	})
 		.setTween(fadein(document.querySelectorAll("#stats > *")[i]))
 		.duration(700)
