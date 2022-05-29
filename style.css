@@ -60,10 +60,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .stat h1 {
     font-size: 36px;
+    max-width: min(100vw, 650px);
 }
 
 #stats {
