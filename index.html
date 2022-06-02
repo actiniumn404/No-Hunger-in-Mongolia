@@ -16,8 +16,45 @@
             <h1 class="emFont">Mongolians are going hungry</h1>
             <h2 class="emFont">but you can help</h2>
         </header>
+        <section id="generalInfo">
+            <h1 class="emFont big">Some General Info</h1>
+            <div class="info">
+                <h1 class="emFont med">Ok. What's the problem?</h1>
+                <p class="fill" name="defprob">LOADING</p>
+            </div>
+            <div class="info">
+                <h1 class="emFont med">What goal did I choose? Why did I choose it?</h1>
+                <p class="fill" name="chooseWhat">LOADING</p>
+            </div>
+            <div class="info">
+                <h1 class="emFont med">Woah! How bad is this?!</h1>
+                <p class="fill" name="howBad">LOADING</p>
+                <div style="width:650px;" class="chartcont"> <!--ChartJS canvases are so annoying I have to put it in a container-->
+                    <canvas id="genInfo_howbad_chart"></canvas>
+                </div>
+            </div>
+            <div class="info">
+                <h1 class="emFont med">If we don't do anything, what will happen?</h1>
+                <p class="fill" name="dontDoAnything">LOADING</p>
+            </div>
+            <div class="info">
+                <h1 class="emFont med">Does science have anything to do with this?</h1>
+                <p class="fill" name="scienceFactors">LOADING</p>
+            </div>
+            <div class="info">
+                <h1 class="emFont med">A <i>personal</i> story please?</h1>
+                <p class="fill" name="personalStory">LOADING</p>
+                <div class="sidebyside">
+                    <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/bLIwwswd7mA?ecver=1&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div><a  id="a0PzMxKG" href="https://www.compareboilercover.co.uk">https://www.compareboilercover.co.uk</a></div><div><a  id="a0PzMxKG" href="https://www.compareboilercover.co.uk">https://www.compareboilercover.co.uk</a></div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2019-01-01",endDate:"2019-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/ ">Embed YouTube Video</a></small></iframe>
+                    <figure>
+                        <img src="assets/moreMilk.jpeg" width="460">
+                        <figcaption style="width: 460px;text-align: center;">Thanks to this organization, these Mongolian herders can now have an extra liter of milk each day</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
         <section id="stats">
-            <h1 class="emFont">Statistics</h1>
+            <h1 class="emFont big">Statistics</h1>
             <div class="stat">
                 <div id="stats__malnourishment__cont" style="width:650px">
                     <canvas id="stats__malnourishment" style="height: 100px;"></canvas>
