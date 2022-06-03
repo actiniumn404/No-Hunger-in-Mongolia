@@ -167,6 +167,22 @@ answers = {
 		"Livestock starve to death due to a lack of grass when the ground is frozen solid during dzuds. Mongolians depend on these livestock for many things which include food. Hence, by feeding these livestock, you can save them. ",
 	sol1pro:
 		"Despite how much money or awareness you raise, dzuds will still be a thing due to climate change. You can uproot this problem with this solution.",
+	sol1con: "Climate change isn’t exactly the most controllable of things ",
+	sol2pro:
+		"This is really easy to do. Just phone your friends and family. That doesn’t really take that much effort. ",
+	sol2con:
+		"More awareness doesn’t necessarily result in more difference. So, this could become effort for nothing ",
+	sol3pro:
+		"Unlike stopping climate change, donating money can be done very simply. ",
+	sol3con:
+		"donating money is technically losing hard earned money, so doing this could make money earned after working hard disappear.  ",
+	sol4pro:
+		"As stated above, the main reason of hunger in Mongolia is livestock dying in dzuds. Therefore, you can save herders by making a shelter for their animals. ",
+	sol4con:
+		"Shelters are permanent, so you can save herders for many years with a shelter.",
+	sol5pro:
+		"You can kill two birds with one stone here: the hunger of both the livestock and the Mongolian herders ",
+	sol5con: "Food is expensive.  ",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
