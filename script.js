@@ -155,8 +155,20 @@ answers = {
 		"Yes! The main reason that this hunger is happening is because of something called a dzud. A dzud is a harsh winter after a dry summer. During dzuds, the pastures that livestock graze on are frozen solid under deep snow. Livestock, which hearding families rely on for food, transportation, and income do not survive dzuds. Due to climate change, dzuds have become very common. ",
 	personalStory:
 		"Shaariibuu Luttumur is a Mongolian herder. Like many other headers, he is struggling with debt. In dzuds, herders find it very difficult to feed their livestock, so they are forced to take out loans to buy food. These loans have sent Shaariibuu and many other herders into a financial crisis. He recalls that he would have “taken out another loan to get [himself] all through the winter” Luckily, the Food and Agriculture Organization of the United Nations (FAO) intervened, and sent him some money and 846 kg of concentrated feed. Shaariibuu is now out of debt and can care for his animals now.",
+	sol1ex:
+		"Dzuds, the main cause of hunger in Mongolia have been increasingly common over the years due to climate change. Thus, dzuds can become less common if climate change is minimized ",
+	sol2ex:
+		"Unfortunately, not everyone knows about the global goals. Surveys found that only between 28-45% of people have even heard of the global goals. Imagine if the rest of the 55-72% of the world population knew about the global goals. Many more people would be aware, and hence, more people can make a difference. ",
+	sol3ex:
+		"Donating money is one of the simplest things you can do, but it is one of the most powerful things that can be done. According to the FAO, a organization working in Mongolia, every 1 US Dollar they spent resulted in 7.1 US Dollars in benefits in households ",
+	sol4ex:
+		"As stated above, the main reason of hunger in Mongolia is livestock dying in dzuds. Therefore, you can save herders by making a shelter for their animals. ",
+	sol5ex:
+		"Livestock starve to death due to a lack of grass when the ground is frozen solid during dzuds. Mongolians depend on these livestock for many things which include food. Hence, by feeding these livestock, you can save them. ",
+	sol1pro:
+		"Despite how much money or awareness you raise, dzuds will still be a thing due to climate change. You can uproot this problem with this solution.",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
-	e.innerHTML = answers[e.getAttribute("name")];
+	e.innerHTML += answers[e.getAttribute("name")];
 });
