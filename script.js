@@ -162,7 +162,7 @@ answers = {
 	sol3ex:
 		"Donating money is one of the simplest things you can do, but it is one of the most powerful things that can be done. According to the FAO, a organization working in Mongolia, every 1 US Dollar they spent resulted in 7.1 US Dollars in benefits in households ",
 	sol4ex:
-		"As stated above, the main reason of hunger in Mongolia is livestock dying in dzuds. Therefore, you can save herders by making a shelter for their animals. ",
+		"One way to survive a dzud is to move to pastures that are not affected by dzuds. Access to these pastures isn’t the best, so paving a road to distant pastures could help ",
 	sol5ex:
 		"Livestock starve to death due to a lack of grass when the ground is frozen solid during dzuds. Mongolians depend on these livestock for many things which include food. Hence, by feeding these livestock, you can save them. ",
 	sol1pro:
@@ -177,12 +177,14 @@ answers = {
 	sol3con:
 		"donating money is technically losing hard earned money, so doing this could make money earned after working hard disappear.  ",
 	sol4pro:
-		"As stated above, the main reason of hunger in Mongolia is livestock dying in dzuds. Therefore, you can save herders by making a shelter for their animals. ",
+		"Roads are permanent, so you can save herders for many years with a road. ",
 	sol4con:
-		"Shelters are permanent, so you can save herders for many years with a shelter.",
+		"Roads take a lot of resources, and could possibly take very long to make.",
 	sol5pro:
 		"You can kill two birds with one stone here: the hunger of both the livestock and the Mongolian herders ",
 	sol5con: "Food is expensive.  ",
+	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. According to them, every one dollar they spent in Mongolia, benefits of an average 7.1 dollars per household followed.? ",
+	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger. ",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {

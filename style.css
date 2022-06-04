@@ -97,8 +97,9 @@ body {
     .stat>div,
     .chartcont,
     .sidebyside,
-    img,
-    .sol {
+    img:not(.noMobile),
+    .sol,
+    .card {
         width: 90vw !important;
         max-width: none;
     }
@@ -140,4 +141,16 @@ body {
 
 .timesfont {
     font-family: 'Times New Roman', Times, serif;
+}
+.card {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 16px white;
+    margin: 20px;
 }
