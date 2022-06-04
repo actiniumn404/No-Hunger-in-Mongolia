@@ -185,6 +185,33 @@ answers = {
 	sol5con: "Food is expensive.  ",
 	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. According to them, every one dollar they spent in Mongolia, benefits of an average 7.1 dollars per household followed. ",
 	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger. ",
+	whybestsol:
+		"This is the most efficient and effective solution since a road is long term, unlike donating money or sending in food. You don’t need to return each year to redo help. This is a lot more efficient than the climate change solution as climate change isn’t the most controllable thing. ",
+	economicimpact:
+		"The thing is, Agriculture makes up 35% of the labor force, and 12% of Mongolia’s GDP. 95% of agricultural land is pastures for livestock. 70% of these have been severely degraded. We know that the livestock industry is having a bit of a problem lately which would technically kind of downgrade the 12% of the GDP agriculture dominates. Having this part lost would have a nice impact on the GDP. ",
+	bib: `
+	"Acting Early to Save Livelihoods in Mongolia.” Food and Agriculture Organization of the United Nations, United Nations, 1 Sept. 2019, https://www.fao.org/fao-stories/article/it/c/1174186/.  
+
+	Alexander, Lynsey. “Hunger in Mongolia: What's Being Done.” The Borgen Project, 30 July 2020, https://borgenproject.org/hunger-in-mongolia/.  
+
+	“The Asia Pacific Regional Report on Food Safety and Nutrition Points at Stagnation in Combating Hunger and Malnutrition in the Region in Mongolia.” United Nations Mongolia, United Nations, 27 Nov. 2018, https://mongolia.un.org/en/14399-asia-pacific-regional-report-food-safety-and-nutrition-points-stagnation-combating-hunger-and.  
+
+	Asian Development Bank. “ADB to Help Manage Food Insecurity Risks in Mongolia amid Supply Disruptions Caused by Covid-19.” Asian Development Bank, Asian Development Bank, 29 Oct. 2020, https://www.adb.org/news/adb-help-manage-food-insecurity-risks-mongolia-amid-supply-disruptions-covid-19.  
+
+	Erdenebaatar, B. “Studies on Long-Distance Transhumant Grazing Systems in Uvs and Khuvsgul Aimags of Mongolia.” Edited by J. M. Suttie and S. G. Reynolds, Food and Agriculture Organization of The United Nations, Transhumant Grazing Systems in Temperate Asia, 2003, https://www.fao.org/3/Y4856E/y4856e08.htm.  
+
+	Hahn, Allison Hailey. “Mongolian Dzud: Threats to and Protection of Mongolia's Herding Communities.” Association for Asian Studies, Education About Asia, 29 June 2020, https://www.asianstudies.org/publications/eaa/archives/mongolian-dzud-threats-to-and-protection-of-mongolias-herding-communities/.  
+
+	“Hunger Relief in Mongolia.” Action Against Hunger, Action Against Hunger, 23 July 2018, https://www.actionagainsthunger.org/countries/asia/mongolia.  
+
+	Perry, Jalil. “Why Is There Hunger in Mongolia?” The Borgen Project, 30 Dec. 2019, https://borgenproject.org/why-is-there-hunger-in-mongolia/.  
+
+	United Nations. “Towards Sustainable Food Systems in Mongolia.” FOOD SYSTEMS SUMMIT DIALOGUES GATEWAY, United Nations Mongolia, June 2021, https://summitdialogues.org/wp-content/uploads/2021/09/ENG_sustainablefoodsystems_Mongolia_FSD_Pathway-document.pdf.  
+
+	“What People Know and Think about the Sustainable Development Goals.” Organization for Economic Co-Operation and Development, OECD Development Communication Network, June 2017, https://www.oecd.org/development/pgd/International_Survey_Data_DevCom_June%202017.pdf.  `.replace(
+		/(https:\/\/[a-zA-Z./%0-9\-_]+)\./g,
+		"<a href='$1' target='_blank'>$1</a>"
+	),
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
