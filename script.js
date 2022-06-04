@@ -183,7 +183,7 @@ answers = {
 	sol5pro:
 		"You can kill two birds with one stone here: the hunger of both the livestock and the Mongolian herders ",
 	sol5con: "Food is expensive.  ",
-	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. According to them, every one dollar they spent in Mongolia, benefits of an average 7.1 dollars per household followed.? ",
+	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. According to them, every one dollar they spent in Mongolia, benefits of an average 7.1 dollars per household followed. ",
 	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger. ",
 };
 
