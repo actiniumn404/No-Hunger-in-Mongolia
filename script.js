@@ -162,7 +162,7 @@ answers = {
 	sol3ex:
 		"Donating money is one of the simplest things you can do, but it is one of the most powerful things that can be done. According to the FAO, a organization working in Mongolia, every 1 US Dollar they spent resulted in 7.1 US Dollars in benefits in households ",
 	sol4ex:
-		"One way to survive a dzud is to move to pastures that are not affected by dzuds. Access to these pastures isn’t the best, so paving a road to distant pastures could help ",
+		'One way to survive a dzud is to move to pastures that are not affected by dzuds. This migration is called "otor." Access to these pastures isn’t the best, so paving a road to distant pastures could help ',
 	sol5ex:
 		"Livestock starve to death due to a lack of grass when the ground is frozen solid during dzuds. Mongolians depend on these livestock for many things which include food. Hence, by feeding these livestock, you can save them. ",
 	sol1pro:
@@ -212,6 +212,8 @@ answers = {
 		/(https:\/\/[a-zA-Z./%0-9\-_]+)\./g,
 		"<a href='$1' target='_blank'>$1</a>"
 	),
+	suppliesneeded:
+		"This solution boils down to just building any type of road along otor migration routes. Hence, you just need basic road building materials, such as asphalt or even just gravel.",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
