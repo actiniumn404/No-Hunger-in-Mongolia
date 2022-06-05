@@ -208,14 +208,29 @@ answers = {
 
 	United Nations. “Towards Sustainable Food Systems in Mongolia.” FOOD SYSTEMS SUMMIT DIALOGUES GATEWAY, United Nations Mongolia, June 2021, https://summitdialogues.org/wp-content/uploads/2021/09/ENG_sustainablefoodsystems_Mongolia_FSD_Pathway-document.pdf.  
 
-	“What People Know and Think about the Sustainable Development Goals.” Organization for Economic Co-Operation and Development, OECD Development Communication Network, June 2017, https://www.oecd.org/development/pgd/International_Survey_Data_DevCom_June%202017.pdf.  `.replace(
+	“What People Know and Think about the Sustainable Development Goals.” Organization for Economic Co-Operation and Development, OECD Development Communication Network, June 2017, https://www.oecd.org/development/pgd/International_Survey_Data_DevCom_June%202017.pdf.  
+	
+	Batdelger, Tuvshintugs. “Mongolia's Economic Prospects and Challenges.” East Asia Forum, National University of Mongolia, 28 Mar. 2014, https://www.eastasiaforum.org/2014/03/23/mongolias-economic-prospects-and-challenges/.  `.replace(
 		/(https:\/\/[a-zA-Z./%0-9\-_]+)\./g,
 		"<a href='$1' target='_blank'>$1</a>"
 	),
 	suppliesneeded:
 		"This solution boils down to just building any type of road along otor migration routes. Hence, you just need basic road building materials, such as asphalt or even just gravel.",
+	viable:
+		"Mongolia has recently begun to tap into its natural resources, which include gold, copper, and coal. This has made Mongolia a bit richer. Hence, this solution can be achievable because of this extra money. Furthermore, as mentioned above, roads last a long time. You don’t need to repave roads yearly. Hence, this solution is quite efficient. ",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
 	e.innerHTML += answers[e.getAttribute("name")];
 });
+
+const fullscreenmode = (elem) => {
+	if (document.querySelectorAll(".fullscreen").length) {
+		document.querySelectorAll(".fullscreen")[0].classList.remove("fullscreen");
+	}
+	elem.classList.add("fullscreen");
+	document.getElementById("fullscreen").style.background =
+		$(elem).css("background");
+	document.getElementById("fullscreen").innerHTML = elem.outerHTML;
+	document.getElementById("fullscreen").requestFullscreen();
+};
