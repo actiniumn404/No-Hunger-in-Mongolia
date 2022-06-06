@@ -218,6 +218,14 @@ answers = {
 		"This solution boils down to just building any type of road along otor migration routes. Hence, you just need basic road building materials, such as asphalt or even just gravel.",
 	viable:
 		"Mongolia has recently begun to tap into its natural resources, which include gold, copper, and coal. This has made Mongolia a bit richer. Hence, this solution can be achievable because of this extra money. Furthermore, as mentioned above, roads last a long time. You don’t need to repave roads yearly. Hence, this solution is quite efficient. ",
+	howmuchmoney:
+		"Experts estimate that $3.4-3.5 billion a year will be needed in developing countries like Mongolia to meet global goals like Zero Hunger. In response to a dzud that killed millions of livestock, the government launched the National Programme on Livestock Protection from Drought and Dzud Disasters. The money mentioned would probably go here. ",
+	effects:
+		"The short and long term effects of this solution are pretty much equivalent. Roads that improve access for otor would cause more people to go on otor, which may save their life and livestock (which are their food source). <b>What I’m trying to say is, more people and animals are going to be saved, both in the short and long run.</b> ",
+	science:
+		"The science and logic behind this solution is really simple. When one place has a dzud, another place will likely not due to how weather works. Mongolian herders use a tactic called otor to migrate to far away pastures. You can help otor by building roads. ",
+	timeline:
+		"There really isn’t a straightforward answer for this. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
