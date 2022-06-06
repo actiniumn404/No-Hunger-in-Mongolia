@@ -226,6 +226,10 @@ answers = {
 		"The science and logic behind this solution is really simple. When one place has a dzud, another place will likely not due to how weather works. Mongolian herders use a tactic called otor to migrate to far away pastures. You can help otor by building roads. ",
 	timeline:
 		"There really isn’t a straightforward answer for this. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
+	obstacle1:
+		"You can try and find nearby villages and use them as stopping points and a route to get construction crew to the road. ",
+	obstacle2:
+		"The Mongolian government is getting a bit richer from natural resources. I guess they can put off some of their money to this solution. ",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
