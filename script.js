@@ -230,6 +230,14 @@ answers = {
 		"You can try and find nearby villages and use them as stopping points and a route to get construction crew to the road. ",
 	obstacle2:
 		"The Mongolian government is getting a bit richer from natural resources. I guess they can put off some of their money to this solution. ",
+	myaction:
+		"This year, I have made this website (which you are reading this on) to raise awareness in hope that people will donate to organizations which will get Mongolians out of poverty and possibly even fund my solution. ",
+	mysteps:
+		"This website is essentially subtly asking people to donate. One of the next steps I am willing to take is to go door to door to ask for donations more obviously. ",
+	mywhere:
+		"The two organizations I mentioned helping Mongolian hunger above all have their own effective way in trying to stop hunger. I would go through these organizations to donate money. ",
+	myimpact:
+		"Although this website may only help raise a little bit of money, a little bit of money may help feed one person—change the life of one person. Honestly, I only expect this website to make a few dollars and feed a few people. (A lot more would be fantastic!) However, helping a few people is better than helping none.  ",
 };
 
 document.querySelectorAll(".fill").forEach((e) => {

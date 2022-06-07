@@ -120,7 +120,8 @@ body {
 }
 
 #generalInfo>div.info p,
-.sol p {
+.sol p,
+#personalAct p {
     font-size: 28px;
     width: min(1420px, 80vw);
 }
@@ -203,4 +204,15 @@ body {
 }
 #fullscreen {
     overflow: auto;
+}
+#personalAct {
+    background-color: #aff1cf;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#personalAct h1 {
+    width: min(1420px, 80vw);
 }
