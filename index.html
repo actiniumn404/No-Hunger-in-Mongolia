@@ -15,36 +15,36 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <header id="header__intro">
+        <header id="header__intro" class="slide">
             <h1 class="emFont">Mongolians are going hungry</h1>
             <h2 class="emFont">but you can help</h2>
         </header>
         <section id="generalInfo">
             <h1 class="emFont big">Some General Info</h1>
             <div class="info">
-                <h1 class="emFont med">Ok. What's the problem?</h1>
+                <h1 class="emFont med slide">Ok. What's the problem?</h1>
                 <p class="fill" name="defprob"></p>
             </div>
             <div class="info">
-                <h1 class="emFont med">What goal did I choose? Why did I choose it?</h1>
+                <h1 class="emFont med slide">What goal did I choose? Why did I choose it?</h1>
                 <p class="fill" name="chooseWhat"></p>
                 <div class="sidebyside">
                     <img src="assets/goalPoster.webp">
                 </div>
             </div>
             <div class="info">
-                <h1 class="emFont med">Woah! How bad is this?!</h1>
+                <h1 class="emFont med slide">Woah! How bad is this?!</h1>
                 <p class="fill" name="howBad"></p>
                 <div style="width:650px;" class="sidebyside"> <!--ChartJS canvases are so annoying I have to put it in a container-->
                     <canvas id="genInfo_howbad_chart"></canvas>
                 </div>
             </div>
             <div class="info">
-                <h1 class="emFont med">If we don't do anything, what will happen?</h1>
+                <h1 class="emFont med slide">If we don't do anything, what will happen?</h1>
                 <p class="fill" name="dontDoAnything"></p>
             </div>
             <div class="info">
-                <h1 class="emFont med">Does science have anything to do with this?</h1>
+                <h1 class="emFont med slide">Does science have anything to do with this?</h1>
                 <p class="fill" name="scienceFactors"></p>
                 <div class="sidebyside">
                     <figure>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="info">
-                <h1 class="emFont med">A <i>personal</i> story please?</h1>
+                <h1 class="emFont med slide">A <i>personal</i> story please?</h1>
                 <p class="fill" name="personalStory"></p>
                 <div class="sidebyside">
                     <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/bLIwwswd7mA?ecver=1&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div><a  id="a0PzMxKG" href="https://www.compareboilercover.co.uk">https://www.compareboilercover.co.uk</a></div><div><a  id="a0PzMxKG" href="https://www.compareboilercover.co.uk">https://www.compareboilercover.co.uk</a></div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2019-01-01",endDate:"2019-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/ ">Embed YouTube Video</a></small></iframe>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="info">
-                <h1 class="emFont med">How much money? What will it be used towards?</h1>
+                <h1 class="emFont med slide">How much money? What will it be used towards?</h1>
                 <p class="fill" name="howmuchmoney"></p>
                 <div class="sidebyside">
                     <figure>
@@ -78,31 +78,31 @@
         <section id="stats">
             <h1 class="emFont big">Statistics</h1>
             <div class="stat">
-                <div id="stats__malnourishment__cont" style="width:650px">
+                <div id="stats__malnourishment__cont" style="width:650px" class="slide">
                     <canvas id="stats__malnourishment" style="height: 100px;"></canvas>
                 </div>
                 <h1>35% of Mongolians are malnourished</h1>
             </div>
             <div class="stat">
-                <div id="stats__ulaanbaatar_food_cont" style="width:650px">
+                <div id="stats__ulaanbaatar_food_cont" style="width:650px" class="slide">
                     <canvas id="stats__ulaanbaatar_food" style="height: 100px;"></canvas>
                 </div>
                 <h1>68% of people in Ulaanbaatar, Mongolia's capital where 45% of Mongolia lives, has proper access to food</h1>
             </div>
             <div class="stat">
-                <div id="stats_fiveyr_olds_cont" style="width:650px">
+                <div id="stats_fiveyr_olds_cont" style="width:650px" class="slide">
                     <canvas id="stats_fiveyr_olds" style="height: 100px;"></canvas>
                 </div>
                 <h1>20% of Mongolian children under 5 years old are anemic (which is caused by a lack of food), and 65% of which are undernourished</h1>
             </div>
             <div class="stat">
-                <div id="stats_vitad_cont" style="width:650px">
+                <div id="stats_vitad_cont" style="width:650px" class="slide">
                     <canvas id="stats_vitad" style="height: 100px;"></canvas>
                 </div>
                 <h1>Many Mongolians lack a high amount of Vitamin D</h1>
             </div>
             <div class="stat">
-                <div id="stats_iron_cont" style="width:650px">
+                <div id="stats_iron_cont" style="width:650px" class="slide">
                     <canvas id="stats_iron" style="height: 100px;"></canvas>
                 </div>
                 <h1>Many Mongolians lack iron. This is caused by an insufficient diet</h1>
@@ -111,24 +111,24 @@
         <section id="solutions">
             <h1 class="emFont big">Solutions</h1>
             <div class="sol">
-                <h1 class="emFont med"><span class="timesfont">I:</span> Help minimize climate change </h1>
+                <h1 class="emFont med slide"><span class="timesfont">I:</span> Help minimize climate change </h1>
                 <p class="fill" name="sol1ex"></p>
                 <p class="fill" name="sol1pro" style="color: green"><span style="font-weight: bold"><i class="fa-solid fa-check"></i> Pro:</span> </p>
                 <p class="fill" name="sol1con" style="color: red"><span style="font-weight: bold"><i class="fa-solid fa-times"></i> Con:</span> </p>
             </div>
-            <div class="sol">
+           <!--<div class="sol">
                 <h1 class="emFont med"><span class="timesfont">II:</span> Raise awareness and/or send this website to people</h1>
                 <p class="fill" name="sol2ex"></p>
                 <p class="fill" name="sol2pro" style="color: green"><span style="font-weight: bold"><i class="fa-solid fa-check"></i> Pro:</span> </p>
                 <p class="fill" name="sol2con" style="color: red"><span style="font-weight: bold"><i class="fa-solid fa-times"></i> Con:</span> </p>
-            </div>
+            </div>-->
             <div class="sol">
-                <h1 class="emFont med"><span class="timesfont">III:</span> Donate money to organizations  </h1>
+                <h1 class="emFont med slide"><span class="timesfont">II:</span> Donate money to organizations  </h1>
                 <p class="fill" name="sol3ex"></p>
                 <p class="fill" name="sol3pro" style="color: green"><span style="font-weight: bold"><i class="fa-solid fa-check"></i> Pro:</span> </p>
                 <p class="fill" name="sol3con" style="color: red"><span style="font-weight: bold"><i class="fa-solid fa-times"></i> Con:</span> </p>
                 <div class="sidebyside">
-                    <div class="card">
+                    <div class="card slide">
                         <img src="assets/FAO.png" class="noMobile" width="150"> <!--https://commons.wikimedia.org/wiki/File:FAO_logo.svg-->
                         <h1 class="emFont med">Food and Agriculture Organization of the United Nations </h1>
                         <p class="fill" name="org1" style="width: 90%"></p>
@@ -141,14 +141,14 @@
                 </div>
             </div>
             <div class="sol">
-                <h1 class="emFont med"><span class="timesfont">IV:</span> Provide food as an alternative to grass for livestock</h1>
+                <h1 class="emFont med slide"><span class="timesfont">III:</span> Provide food as an alternative to grass for livestock</h1>
                 <p class="fill" name="sol5ex"></p>
                 <p class="fill" name="sol5pro" style="color: green"><span style="font-weight: bold"><i class="fa-solid fa-check"></i> Pro:</span> </p>
                 <p class="fill" name="sol5con" style="color: red"><span style="font-weight: bold"><i class="fa-solid fa-times"></i> Con:</span> </p>
             </div>
             <div class="sol best">
-                <h1 class="emFont med" style="text-align: center;color: rgb(161, 137, 0)"><i class="fa-solid fa-star"></i> Best Solution <i class="fa-solid fa-star"></i></h1>
-                <h1 class="emFont med"><span class="timesfont">V:</span> Pave roads to improve access to distant pastures</h1>
+                <h1 class="emFont med slide" style="text-align: center;color: rgb(161, 137, 0)"><i class="fa-solid fa-star"></i> Best Solution <i class="fa-solid fa-star"></i></h1>
+                <h1 class="emFont med"><span class="timesfont">IV:</span> Pave roads to improve access to distant pastures</h1>
                 <p class="fill" name="sol4ex"></p>
                 <p class="fill" name="sol4pro" style="color: green"><span style="font-weight: bold"><i class="fa-solid fa-check"></i> Pro:</span> </p>
                 <p class="fill" name="sol4con" style="color: red"><span style="font-weight: bold"><i class="fa-solid fa-times"></i> Con:</span> </p>
@@ -157,49 +157,84 @@
                         <img src="assets/dzudroad.jpeg" width="460"> <!-- Source: https://www.asianstudies.org/wp-content/uploads/hahn4-768x297.jpg -->
                         <figcaption style="width: min(460px, 80vw);text-align: center;">A Mongolian herder and their livestock moving along a road to remote pastures. It is these roads that Mongolia can build to rescue herders in dzuds</figcaption>
                     </figure>
+                </div>
+                <h1 class="emFont med slide">But is it reasonable and efficient?</h1>
+                <p class="fill" name="viable"></p>
+                <div class="sidebyside">
+                    <figure>
+                        <img src="assets/resources.jpeg" width="660"> <!-- Source: http://saraandhuntersproject.weebly.com/uploads/2/6/6/8/26688146/5565022.jpg?613 -->
+                        <figcaption style="width: min(660px, 80vw);text-align: center;">As you can see, Mongolia is kind of rich in natural resources</figcaption>
+                    </figure>
+                </div>
+                <h1 class="emFont med slide">Scientific Background</h1>
+                <p class="fill" name="science"></p>
+                <div class="sidebyside">
+                    <figure>
+                        <img src="assets/dzudmig.jpeg" width="320"> <!-- Source: Asian Studies (.org) -->
+                        <figcaption style="width: min(320px, 80vw);text-align: center;">An example of otor</figcaption>
+                    </figure>
+                </div>
+                <h1 class="emFont med slide">Economic Impact</h1>
+                <p class="fill" name="economicimpact"></p>
+                <div class="sidebyside" style="width: 650px">
+                    <canvas id="gdpcanvas"></canvas>
+                </div>
+                <h1 class="emFont med slide">Supplies Needed</h1>
+                <p class="fill" name="suppliesneeded"></p>
+                <div class="sidebyside">
                     <figure>
                         <img src="assets/otorroutes.jpeg" width="660"> <!-- Source: https://www.researchgate.net/publication/233637856_Why_do_Herders_Insist_On_Otor_Maintaining_Mobility_in_Inner_Mongolia Page 40 -->
                         <figcaption style="width: min(660px, 80vw);text-align: center;">Routes taken in otors</figcaption>
                     </figure>
                 </div>
-                <p class="fill" name="whybestsol"></p>
-                <h1 class="emFont med">Scientific Background</h1>
-                <p class="fill" name="science"></p>
-                <h1 class="emFont med">Economic Impact</h1>
-                <p class="fill" name="economicimpact"></p>
-                <h1 class="emFont med">Supplies Needed</h1>
-                <p class="fill" name="suppliesneeded"></p>
-                <h1 class="emFont med">But is it reasonable and efficient?</h1>
-                <p class="fill" name="viable"></p>
-                <h1 class="emFont med">Effects (Short term/Long term)</h1>
+                <h1 class="emFont med slide">Effects (Short term/Long term)</h1>
                 <p class="fill" name="effects"></p>
-                <h1 class="emFont med">How long will this take?</h1>
+                <div class="sidebyside">
+                    <figure>
+                        <img src="assets/dzudstats.jpeg" width="660"> <!-- Source: NPR -->
+                        <figcaption style="width: min(660px, 80vw);text-align: center;">Percent of Mongolian livestock killed in dzuds</figcaption>
+                    </figure>
+                </div>
+                <h1 class="emFont med slide">How long will this take?</h1>
                 <p class="fill" name="timeline"></p>
-                <h1 class="emFont med">Obstacle <span class="timesfont">I: </span> You’re basically building roads in the middle of nowhere. How are you going to get the construction crew there? </h1>
+                <h1 class="emFont med slide">Obstacle <span class="timesfont">I: </span> You’re basically building roads in the middle of nowhere. How are you going to get the construction crew there? </h1>
                 <p class="fill" name="obstacle1"></p>
-                <h1 class="emFont med">Obstacle <span class="timesfont">II: </span> How are you going to get the materials?</h1>
+                <div class="sidebyside">
+                    <figure>
+                        <img src="assets/ruralmongolia.webp" width="660"> <!--https://cdn.britannica.com/46/147346-050-15D6039D/Livestock-grazing-pasture-Mongolia.jpg-->
+                        <figcaption style="width: min(660px, 80vw);text-align: center;">You're suggesting building roads in the middle of nowhere</figcaption>
+                    </figure>
+                </div>
+                <h1 class="emFont med slide">Obstacle <span class="timesfont">II: </span> How are you going to get the materials?</h1>
                 <p class="fill" name="obstacle2"></p>
 
             </div>
         </section>
         <section id="personalAct">
             <h1 class="emFont big">Personal Action</h1>
-            <h1 class="emFont med">What have I done this year?</h1>
+            <h1 class="emFont med slide">What have I done this year?</h1>
             <p class="fill" name="myaction"></p>
-            <h1 class="emFont med">What are some next steps I am going to take?</h1>
+            <h1 class="emFont med slide">What are some next steps I am going to take?</h1>
             <p class="fill" name="mysteps"></p>
-            <h1 class="emFont med">Where would I go, what would I do?</h1>
+            <h1 class="emFont med slide">Where would I go, what would I do?</h1>
             <p class="fill" name="mywhere"></p>
-            <h1 class="emFont med">What impact do I expect to have?</h1>
+            <h1 class="emFont med slide">What impact do I expect to have?</h1>
             <p class="fill" name="myimpact"></p>
         </section>
         <section id="bib">
-            <h1 class="emFont big">Bibliography</h1>
+            <h1 class="emFont big slide">Bibliography</h1>
             <p class="fill" name="bib"></p>
-            <h1 class="emFont big">Image Credits</h1>
-            <p class="fill" name="imgcredits"></p>
+        </section>
+        <section id="thx">
+            <h1 class="emFont big slide">Thanks for reading through all that!</h1>
         </section>
         <script src="script.js" defer></script>
         <section id="fullscreen"></section>
+        <div id="presButtons">
+            <div>Slide <input id="slidenum" type="number" value="0" min="0"></div>
+            <button id="prevslide"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="nextslide"><i class="fa-solid fa-arrow-right"></i></button>
+            <span style="color: red;width: 110px;" id="sliderr"></span>
+        </div>
     </body>
 </html>

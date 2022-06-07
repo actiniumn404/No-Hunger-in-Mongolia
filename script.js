@@ -25,7 +25,6 @@ const makeCanvas = (container, label, dataset, colorset) => {
 				},
 			],
 		},
-		height: 100,
 		options: {
 			responsive: true,
 			plugins: {
@@ -75,6 +74,13 @@ makeCanvas(
 	document.getElementById("stats__malnourishment"),
 	["Malnourished people in Mongolia", "Nourished people in Mongolia"],
 	[35, 65],
+	["red", "green"]
+);
+
+makeCanvas(
+	document.getElementById("gdpcanvas"),
+	["Agriculture and Livestock", "Everything Else"],
+	[12, 88],
 	["red", "green"]
 );
 
@@ -157,8 +163,8 @@ answers = {
 		"Shaariibuu Luttumur is a Mongolian herder. Like many other headers, he is struggling with debt. In dzuds, herders find it very difficult to feed their livestock, so they are forced to take out loans to buy food. These loans have sent Shaariibuu and many other herders into a financial crisis. He recalls that he would have “taken out another loan to get [himself] all through the winter” Luckily, the Food and Agriculture Organization of the United Nations (FAO) intervened, and sent him some money and 846 kg of concentrated feed. Shaariibuu is now out of debt and can care for his animals now.",
 	sol1ex:
 		"Dzuds, the main cause of hunger in Mongolia have been increasingly common over the years due to climate change. Thus, dzuds can become less common if climate change is minimized ",
-	sol2ex:
-		"Unfortunately, not everyone knows about the global goals. Surveys found that only between 28-45% of people have even heard of the global goals. Imagine if the rest of the 55-72% of the world population knew about the global goals. Many more people would be aware, and hence, more people can make a difference. ",
+	//sol2ex:
+	//	"Unfortunately, not everyone knows about the global goals. Surveys found that only between 28-45% of people have even heard of the global goals. Imagine if the rest of the 55-72% of the world population knew about the global goals. Many more people would be aware, and hence, more people can make a difference. ",
 	sol3ex:
 		"Donating money is one of the simplest things you can do, but it is one of the most powerful things that can be done. According to the FAO, a organization working in Mongolia, every 1 US Dollar they spent resulted in 7.1 US Dollars in benefits in households ",
 	sol4ex:
@@ -168,10 +174,10 @@ answers = {
 	sol1pro:
 		"Despite how much money or awareness you raise, dzuds will still be a thing due to climate change. You can uproot this problem with this solution.",
 	sol1con: "Climate change isn’t exactly the most controllable of things ",
-	sol2pro:
-		"This is really easy to do. Just phone your friends and family. That doesn’t really take that much effort. ",
-	sol2con:
-		"More awareness doesn’t necessarily result in more difference. So, this could become effort for nothing ",
+	//sol2pro:
+	//"This is really easy to do. Just phone your friends and family. That doesn’t really take that much effort. ",
+	//sol2con:
+	//"More awareness doesn’t necessarily result in more difference. So, this could become effort for nothing ",
 	sol3pro:
 		"Unlike stopping climate change, donating money can be done very simply. ",
 	sol3con:
@@ -185,8 +191,8 @@ answers = {
 	sol5con: "Food is expensive.  ",
 	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. According to them, every one dollar they spent in Mongolia, benefits of an average 7.1 dollars per household followed. ",
 	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger. ",
-	whybestsol:
-		"This is the most efficient and effective solution since a road is long term, unlike donating money or sending in food. You don’t need to return each year to redo help. This is a lot more efficient than the climate change solution as climate change isn’t the most controllable thing. ",
+	//whybestsol:
+	//	"This is the most efficient and effective solution since a road is long term, unlike donating money or sending in food. You don’t need to return each year to redo help. This is a lot more efficient than the climate change solution as climate change isn’t the most controllable thing. ",
 	economicimpact:
 		"The thing is, Agriculture makes up 35% of the labor force, and 12% of Mongolia’s GDP. 95% of agricultural land is pastures for livestock. 70% of these have been severely degraded. We know that the livestock industry is having a bit of a problem lately which would technically kind of downgrade the 12% of the GDP agriculture dominates. Having this part lost would have a nice impact on the GDP. ",
 	bib: `
@@ -225,7 +231,7 @@ answers = {
 	science:
 		"The science and logic behind this solution is really simple. When one place has a dzud, another place will likely not due to how weather works. Mongolian herders use a tactic called otor to migrate to far away pastures. You can help otor by building roads. ",
 	timeline:
-		"There really isn’t a straightforward answer for this. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
+		"There really isn’t a straightforward answer for this, but the goal is 2030. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
 	obstacle1:
 		"You can try and find nearby villages and use them as stopping points and a route to get construction crew to the road. ",
 	obstacle2:
@@ -254,3 +260,55 @@ const fullscreenmode = (elem) => {
 	document.getElementById("fullscreen").innerHTML = elem.outerHTML;
 	document.getElementById("fullscreen").requestFullscreen();
 };
+
+let slidenum = 0;
+let slides = document.querySelectorAll(".slide");
+document.getElementById("nextslide").onclick = function () {
+	if (slidenum < slides.length) {
+		slidenum += 1;
+		slides[slidenum].scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		});
+	}
+	document.getElementById("slidenum").value = slidenum;
+	document.getElementById("sliderr").style.display = "none";
+};
+function ch() {
+	v = Number(document.getElementById("slidenum").value);
+	if (!v.toString().trim()) {
+		return;
+	}
+	try {
+		if (v && v < slides.length && v >= 0) {
+			slidenum = v;
+			slides[v].scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			});
+			document.getElementById("sliderr").style.display = "none";
+		} else {
+			document.getElementById("sliderr").style.display = "block";
+			document.getElementById("sliderr").innerHTML =
+				"Slide must be between 0 - " + (slides.length - 1);
+		}
+	} catch (err) {
+		document.getElementById("sliderr").style.display = "block";
+		document.getElementById("sliderr").innerHTML =
+			"Slide must be between 0 - " + slides.length;
+	}
+}
+document.getElementById("slidenum").onkeyup = ch;
+document.getElementById("slidenum").onchange = ch;
+
+document.getElementById("prevslide").onclick = function () {
+	if (slidenum >= 0) {
+		slidenum -= 1;
+		slides[slidenum].scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		});
+	}
+	document.getElementById("slidenum").value = slidenum;
+	document.getElementById("sliderr").style.display = "none";
+}; 
