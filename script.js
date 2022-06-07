@@ -152,21 +152,21 @@ answers = {
 	defprob:
 		"In Mongolia, a poor country to the north of China, many people are going hungry. We need to stop this.",
 	chooseWhat:
-		"I have chosen the second global goal of No Hunger. I choose this goal for the following reason: You can be poor and still be alive, but you cannot be alive without food. I have heard of how poor and hungry Mongolians are, and that is really saddening, as you know that without help, these hungry Mongolians will likely die. ",
+		"I have chosen the second global goal of No Hunger. I choose this goal because you can be poor and alive, but you cannot be deprived of food and stay alive. I have heard of how poor and hungry Mongolians are, which is very saddening as you know that without help, these hungry Mongolians will likely die. ",
 	howBad:
-		"Most of the people affected are impoverished people usually in the countryside, who usually are traditional Mongolian herders. The thing is, 28.4% of Mongolia lives below the poverty line, which is a lot. 22% of Mongolia do not have regular food sources to live a healthy life. Also, during COVID:",
+		"Most of the people affected are impoverished Mongolian herders living in the countryside. The thing is, 28.4% of Mongolia lives below the poverty line, which is a lot. 22% of Mongolia does not have regular food sources to live a healthy life. The following graph shows the food supplies of families during COVID:",
 	dontDoAnything:
-		"If this hunger problem is not solved, then many people will stave, which usually leads to death. Moreover, many Mongolians are forced to take out loans which they cannot pay back to feed themselves. So, if they don’t die, Mongolians will end up in a financial crisis. ",
+		"If this hunger problem is not solved, then many people will starve, which usually leads to death. In addition, many Mongolians are forced to take out loans that they cannot pay back to feed themselves. So if they don’t die, Mongolians will wind up in a financial crisis. ",
 	scienceFactors:
-		"Yes! The main reason that this hunger is happening is because of something called a dzud. A dzud is a harsh winter after a dry summer. During dzuds, the pastures that livestock graze on are frozen solid under deep snow. Livestock, which hearding families rely on for food, transportation, and income do not survive dzuds. Due to climate change, dzuds have become very common. ",
+		'Yes! A weather phenominom known as a "dzud" is the main reason there is hunger in Mongolia. A dzud is a harsh winter after a dry summer. This causes the pastures that livestock grazes on are frozen solid under deep snow. Livestock (which herding families rely on for food, transportation, and income) do not survive dzuds. Due to climate change, dzuds have become very common. ',
 	personalStory:
-		"Shaariibuu Luttumur is a Mongolian herder. Like many other headers, he is struggling with debt. In dzuds, herders find it very difficult to feed their livestock, so they are forced to take out loans to buy food. These loans have sent Shaariibuu and many other herders into a financial crisis. He recalls that he would have “taken out another loan to get [himself] all through the winter” Luckily, the Food and Agriculture Organization of the United Nations (FAO) intervened, and sent him some money and 846 kg of concentrated feed. Shaariibuu is now out of debt and can care for his animals now.",
+		"Clip of a video made by the Food and Agriculture Organization of the United Nations (FAO) about their Mongolian Early Warning Program:",
 	sol1ex:
 		"Dzuds, the main cause of hunger in Mongolia have been increasingly common over the years due to climate change. Thus, dzuds can become less common if climate change is minimized ",
 	//sol2ex:
 	//	"Unfortunately, not everyone knows about the global goals. Surveys found that only between 28-45% of people have even heard of the global goals. Imagine if the rest of the 55-72% of the world population knew about the global goals. Many more people would be aware, and hence, more people can make a difference. ",
 	sol3ex:
-		"Donating money is one of the simplest things you can do, but it is one of the most powerful things that can be done. According to the FAO, a organization working in Mongolia, every 1 US Dollar they spent resulted in 7.1 US Dollars in benefits in households ",
+		"Donating money is one of the simplest things you can do, but it is one of the most powerful things that can be done. According to the FAO, an organization working in Mongolia, every 1 US Dollar they spent resulted in 7.1 US Dollars in benefits in households ",
 	sol4ex:
 		'One way to survive a dzud is to move to pastures that are not affected by dzuds. This migration is called "otor." Access to these pastures isn’t the best, so paving a road to distant pastures could help ',
 	sol5ex:
@@ -175,17 +175,16 @@ answers = {
 		"Despite how much money or awareness you raise, dzuds will still be a thing due to climate change. You can uproot this problem with this solution.",
 	sol1con: "Climate change isn’t exactly the most controllable of things ",
 	//sol2pro:
-	//"This is really easy to do. Just phone your friends and family. That doesn’t really take that much effort. ",
+	//"This is easy to do. Just phone your friends and family. That doesn’t really take that much effort. ",
 	//sol2con:
 	//"More awareness doesn’t necessarily result in more difference. So, this could become effort for nothing ",
 	sol3pro:
 		"Unlike stopping climate change, donating money can be done very simply. ",
 	sol3con:
-		"donating money is technically losing hard earned money, so doing this could make money earned after working hard disappear.  ",
+		"donating money is technically losing hard-earned money, so doing this could make money earned after working hard disappear.  ",
 	sol4pro:
 		"Roads are permanent, so you can save herders for many years with a road. ",
-	sol4con:
-		"Roads take a lot of resources, and could possibly take very long to make.",
+	sol4con: "Roads take a lot of resources, and could take very long to make.",
 	sol5pro:
 		"You can kill two birds with one stone here: the hunger of both the livestock and the Mongolian herders ",
 	sol5con: "Food is expensive.  ",
@@ -227,21 +226,21 @@ answers = {
 	howmuchmoney:
 		"Experts estimate that $3.4-3.5 billion a year will be needed in developing countries like Mongolia to meet global goals like Zero Hunger. In response to a dzud that killed millions of livestock, the government launched the National Programme on Livestock Protection from Drought and Dzud Disasters. The money mentioned would probably go here. ",
 	effects:
-		"The short and long term effects of this solution are pretty much equivalent. Roads that improve access for otor would cause more people to go on otor, which may save their life and livestock (which are their food source). <b>What I’m trying to say is, more people and animals are going to be saved, both in the short and long run.</b> ",
+		"The short and long-term effects of this solution are pretty much equivalent. Roads that improve access for otor would cause more people to go on otor, which may save their life and livestock (which are their food source). <b>What I’m trying to say is, more people and animals are going to be saved, both in the short and long run.</b> ",
 	science:
-		"The science and logic behind this solution is really simple. When one place has a dzud, another place will likely not due to how weather works. Mongolian herders use a tactic called otor to migrate to far away pastures. You can help otor by building roads. ",
+		"The science and logic behind this solution are really simple. When one place has a dzud, another place will likely not because of how weather works. Mongolian herders use a tactic called otor to migrate to far away pastures. You can help otor by building roads. ",
 	timeline:
-		"There really isn’t a straightforward answer for this, but the goal is 2030. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
+		"There isn’t a straightforward answer for this, but the goal is 2030. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
 	obstacle1:
-		"You can try and find nearby villages and use them as stopping points and a route to get construction crew to the road. ",
+		"You can try and find nearby villages and use them as stopping points and a route to get the construction crew to the road. ",
 	obstacle2:
 		"The Mongolian government is getting a bit richer from natural resources. I guess they can put off some of their money to this solution. ",
 	myaction:
-		"This year, I have made this website (which you are reading this on) to raise awareness in hope that people will donate to organizations which will get Mongolians out of poverty and possibly even fund my solution. ",
+		"This year, I have made this website (which you are reading this on) to raise awareness in hope that people will donate to organizations that will get Mongolians out of poverty and possibly even fund my solution. ",
 	mysteps:
 		"This website is essentially subtly asking people to donate. One of the next steps I am willing to take is to go door to door to ask for donations more obviously. ",
 	mywhere:
-		"The two organizations I mentioned helping Mongolian hunger above all have their own effective way in trying to stop hunger. I would go through these organizations to donate money. ",
+		"The two organizations I mentioned helping Mongolian hunger above all have their effective way in trying to stop hunger. I would go through these organizations to donate money. ",
 	myimpact:
 		"Although this website may only help raise a little bit of money, a little bit of money may help feed one person—change the life of one person. Honestly, I only expect this website to make a few dollars and feed a few people. (A lot more would be fantastic!) However, helping a few people is better than helping none.  ",
 };
