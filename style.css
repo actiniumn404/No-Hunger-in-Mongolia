@@ -97,13 +97,17 @@ body {
     .stat>div,
     .chartcont,
     .sidebyside,
-    img:not(.noMobile),
+
     .sol,
     .card {
         width: 90vw !important;
         max-width: none;
     }
 
+        img:not(.noMobile) {
+            width: 80vw !important;
+            max-width: none;
+        }
 }
 
 #generalInfo {
