@@ -84,7 +84,7 @@ makeCanvas(
 	["red", "green"]
 );
 
-makeCanvas(
+/*makeCanvas(
 	document.getElementById("stats__ulaanbaatar_food"),
 	[
 		"People with proper access to food in Ulaanbaatar",
@@ -93,7 +93,7 @@ makeCanvas(
 	[68, 32],
 	["gold", "lightgreen"]
 );
-
+*/
 makeCanvas(
 	document.getElementById("stats_fiveyr_olds"),
 	[
@@ -105,7 +105,7 @@ makeCanvas(
 	["red", "orange", "lightgreen"]
 );
 
-makeBarCanvas(
+/*makeBarCanvas(
 	document.getElementById("stats_vitad"),
 	["Children Under 5", "Pregnant Women", "Men"],
 	[90, 95, 85],
@@ -117,7 +117,7 @@ makeBarCanvas(
 	["Very young children", "Pregnant Women"],
 	[21, 30],
 	["orange", "gold"]
-);
+);*/
 
 makeBarCanvas(
 	document.getElementById("genInfo_howbad_chart"),
@@ -188,8 +188,8 @@ answers = {
 	sol5pro:
 		"You can kill two birds with one stone here: the hunger of both the livestock and the Mongolian herders ",
 	sol5con: "Food is expensive.  ",
-	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. According to them, every one dollar they spent in Mongolia, benefits of an average 7.1 dollars per household followed. ",
-	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger. ",
+	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. This program has helped feed and save many Mongolians",
+	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger.",
 	//whybestsol:
 	//	"This is the most efficient and effective solution since a road is long term, unlike donating money or sending in food. You don’t need to return each year to redo help. This is a lot more efficient than the climate change solution as climate change isn’t the most controllable thing. ",
 	economicimpact:
@@ -234,7 +234,7 @@ answers = {
 	obstacle1:
 		"You can try and find nearby villages and use them as stopping points and a route to get the construction crew to the road. ",
 	obstacle2:
-		"The Mongolian government is getting a bit richer from natural resources. I guess they can put off some of their money to this solution. ",
+		"The Mongolian government may be able to fund a little bit of the money to buy the materials. However, you can help by donating to organizations working in Mongolia. ",
 	myaction:
 		"This year, I have made this website (which you are reading this on) to raise awareness in hope that people will donate to organizations that will get Mongolians out of poverty and possibly even fund my solution. ",
 	mysteps:
