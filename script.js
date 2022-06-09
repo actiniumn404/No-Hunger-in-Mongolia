@@ -158,6 +158,15 @@ const makeList = (...elements) => {
 	return res;
 };
 
+const makeNumberList = (...elements) => {
+	res = "<ol>";
+	elements.forEach((el) => {
+		res += `<li>${el}</li>`;
+	});
+	res += "</ol>";
+	return res;
+};
+
 answers = {
 	defprob:
 		"In Mongolia, a poor country to the north of China, many people are going hungry. We need to stop this.",
@@ -222,8 +231,16 @@ answers = {
 	//sol5pro:
 	//"You can kill two birds with one stone here: the hunger of both the livestock and the Mongolian herders ",
 	//sol5con: "Food is expensive.  ",
-	org1: "The FAO has a program called “acting early” where they give out money and food to poorer Mongolians. This program has helped feed and save many Mongolians",
-	org2: "This organization has worked in Mongolia since 2001 and has helped communities invest in protection against harsh living conditions and harsh weather, which is one of the main causes of hunger.",
+	org1: makeList(
+		"The FAO has a program called “acting early” where they give out money and food to poorer Mongolians.",
+		"This program has helped feed and save many Mongolians",
+		"They report that every 1 US dollar they spent in Mongolia, an average of 7.1 US dollars were seen in benefits"
+	),
+	org2: makeList(
+		"This organization has worked in Mongolia since 2001",
+		"They have helped communities invest in protection against harsh living conditions and harsh weather",
+		"Examples include protection against dzuds, which is one of the biggest causes of hunger"
+	),
 	//whybestsol:
 	//	"This is the most efficient and effective solution since a road is long term, unlike donating money or sending in food. You don’t need to return each year to redo help. This is a lot more efficient than the climate change solution as climate change isn’t the most controllable thing. ",
 	economicimpact: makeList(
@@ -252,12 +269,21 @@ answers = {
 
 	“What People Know and Think about the Sustainable Development Goals.” Organization for Economic Co-Operation and Development, OECD Development Communication Network, June 2017, https://www.oecd.org/development/pgd/International_Survey_Data_DevCom_June%202017.pdf.  
 	
-	Batdelger, Tuvshintugs. “Mongolia's Economic Prospects and Challenges.” East Asia Forum, National University of Mongolia, 28 Mar. 2014, https://www.eastasiaforum.org/2014/03/23/mongolias-economic-prospects-and-challenges/.  `.replace(
+	Batdelger, Tuvshintugs. “Mongolia's Economic Prospects and Challenges.” East Asia Forum, National University of Mongolia, 28 Mar. 2014, https://www.eastasiaforum.org/2014/03/23/mongolias-economic-prospects-and-challenges/.  
+	
+	Grebmer, Klaus von, et al. “2020 Global Hunger Index.” Global Hunger Index, Concern Worldwide, Oct. 2022, https://www.globalhungerindex.org/pdf/en/2020.pdf. 
+
+	“Inclusive Recovery from Pandemic Requires Greater Push to End Poverty, Hunger, Delegates in Social Development Commission Stress, as 2022 Session Continues - World.” ReliefWeb, UN Economic and Social Council, 9 Feb. 2022, https://reliefweb.int/report/world/inclusive-recovery-pandemic-requires-greater-push-end-poverty-hunger-delegates-social. 
+
+	Kwong, Emily. “The Deadly Winters That Have Transformed Life for Herders in Mongolia.” NPR, NPR, 29 July 2019, https://www.npr.org/2019/07/29/737990796/the-deadly-winters-that-have-transformed-life-for-herders-in-mongolia. `.replace(
 		/(https:\/\/[a-zA-Z./%0-9\-_]+)\./g,
 		"<a href='$1' target='_blank'>$1</a>"
 	),
-	suppliesneeded:
-		"This solution boils down to just building any type of road along otor migration routes. Hence, you just need basic road building materials, such as asphalt or even just gravel.",
+	suppliesneeded: makeList(
+		"This solution boils down to just building any type of road",
+		"Hence, you just need basic road building materials.",
+		"Road building materials: asphalt, gravel, or even just dirt."
+	),
 	viable: makeList(
 		"Mongolia is rich in natural resources. (See map below)",
 		"Government has been tapping into these. So you could fund this solution with this extra money",
@@ -270,27 +296,54 @@ answers = {
 		"Mongolia's government recently launched the <span class='timesfont'>National Programme on Livestock Protection from Drought and Dzud Disasters.</span>",
 		"This money would probably go here. "
 	),
-	effects:
-		"The short and long-term effects of this solution are pretty much equivalent. Roads that improve access for otor would cause more people to go on otor, which may save their life and livestock (which are their food source). <b>What I’m trying to say is, more people and animals are going to be saved, both in the short and long run.</b> ",
+	effects: makeList(
+		"A road can be effective no matter in the present (short-term) or future (long-term)",
+		"Hence, short-term and long-term effects should be very similar",
+		"A road could save the lives of many people and livestock, both short-term and long-term"
+	),
 	science: makeList(
 		"When one place has a dzud, another place will likely not because of how weather works.",
 		"Mongolian herders take advantage of this and go to distant pastures in hope of surviving a dzud. ",
 		"You can encourage this by building roads"
 	),
-	timeline:
-		"There isn’t a straightforward answer for this, but the goal is 2030. The timing of this solution relies solely on how fast Mongolia can obtain road materials and build roads. I cannot reliably calculate how long this solution will take even with data, so I will just leave it like this. ",
-	obstacle1:
-		"You can try and find nearby villages and use them as stopping points and a route to get the construction crew to the road. ",
-	obstacle2:
-		"The Mongolian government may be able to fund a little bit of the money to buy the materials. However, you can help by donating to organizations working in Mongolia. ",
-	myaction:
-		"This year, I have made this website (which you are reading this on) to raise awareness in hope that people will donate to organizations that will get Mongolians out of poverty and possibly even fund my solution. ",
-	mysteps:
-		"This website is essentially subtly asking people to donate. One of the next steps I am willing to take is to go door to door to ask for donations more obviously. ",
-	mywhere:
-		"The two organizations I mentioned helping Mongolian hunger above all have their effective way in trying to stop hunger. I would go through these organizations to donate money. ",
-	myimpact:
-		"Although this website may only help raise a little bit of money, a little bit of money may help feed one person—change the life of one person. Honestly, I only expect this website to make a few dollars and feed a few people. (A lot more would be fantastic!) However, helping a few people is better than helping none.  ",
+	timeline: makeList(
+		"1-2: Collect funds from government and donations",
+		"2-3: Plan out route and start building roads",
+		"3-4: Inform people about the roads",
+		"4: Enjoy the effects of Zero Hunger (hopefully)"
+	),
+	obstacle1: makeList(
+		"This technically isn't the middle of nowhere.",
+		"There're villages here and there",
+		"You can use these villages as stopping points and form a route traversing through the villages"
+	),
+	obstacle2: makeList(
+		"We can put off a bit of time before building to raise money. ",
+		"People can donate",
+		"The government could also chip in a bit of its budget",
+		"Then the materials can be bought"
+	),
+	myaction: makeList(
+		"This year, I have made this website (which you are viewing right now) to raise awareness.",
+		"I hope that this website has inspired people to donate to feed Mongolians and maybe fund my solution",
+		"I have sent this website to many people to get the word out as well"
+	),
+	mysteps: makeList(
+		"This website basically just presents facts",
+		"It doesn't directly ask people for money, just subtly encourages people",
+		"The next steps I am willing to take is to go door to door and ask for donations more obviously"
+	),
+	mywhere: makeList(
+		"Throughout my presentation, I have talked about the FAO multiple times.",
+		"Personally, I have go through this organization and donate to them",
+		"Of course, there is another organization which I'll talk about below"
+	),
+	myimpact: makeList(
+		"I honestly expect only to have a little impact--a few dollars or so donated to my organizations",
+		"However, a little bit of money can feed--change the life of a person",
+		"Although we may not feed a lot of Mongolia with one project, we can get there, person by person",
+		"Changing the life of a person is priceless."
+	),
 };
 
 document.querySelectorAll(".fill").forEach((e) => {
@@ -327,7 +380,7 @@ function ch() {
 		return;
 	}
 	try {
-		if (v && v < slides.length && v >= 0) {
+		if (v < slides.length && v >= 0) {
 			slidenum = v;
 			slides[v].scrollIntoView({
 				behavior: "smooth",
